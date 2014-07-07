@@ -48,6 +48,7 @@ switch (_mode) do
 			case "silver": {_var = "license_civ_silver"}; //##12
 			case "coal": {_var = "license_civ_coal"}; //##10
 			case "bier": {_var = "license_civ_bier"}; //##10
+			case "dw": {_var = "license_civ_dw"}; //##10
 			//
 			case "adac": {_var = "license_civ_adac"}; //##33
 			
@@ -98,6 +99,7 @@ switch (_mode) do
 			case "license_civ_silver": {_var = "silver"}; //##12
 			case "license_civ_coal": {_var = "coal"}; //##10
 			case "license_civ_bier": {_var = "bier"}; //##10
+			case "license_civ_dw": {_var = "dw"}; //##10
 			
 			case "license_civ_adac": {_var = "adac"}; //##10
 			

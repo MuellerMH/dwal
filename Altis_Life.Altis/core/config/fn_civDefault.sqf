@@ -44,4 +44,5 @@ player assignItem "ItemWatch";
 
 hintC "default gear opened";
 
+
 [] call life_fnc_civSaveGear; //save gear into file

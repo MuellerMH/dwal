@@ -154,6 +154,7 @@ class Life_Client_Core
 		class clothing_cop {};
 		class clothing_bruce {};
 		class clothing_adac {};
+		class clothing_deathwatch {};
 		class clothing_reb {};
 		class clothing_dive {};
 		

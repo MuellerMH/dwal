@@ -15,6 +15,7 @@ if((_this select 3) in [/*"bruce","dive",*/"reb"] && playerSide == west) exitWit
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Du hast noch kein Rebellentraining!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide == civilian) exitWith {hint "Du musst Polizist sein um diesen Laden nutzen zu können!"; closeDialog 0;};
 if((_this select 3) == "adac" && (["adac"] call life_fnc_permLevel) < 1) exitWith {hint "Du bist kein Mitglied im ADAC!"; closeDialog 0;};
+if((_this select 3) == "dw" && __GETC__(life_dwlevel) < 1) exitWith {hint "Du bist kein Mitglied im ADAC!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

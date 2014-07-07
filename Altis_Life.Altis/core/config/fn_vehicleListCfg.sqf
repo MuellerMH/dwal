@@ -999,6 +999,157 @@ switch (_shop) do
 		];
 	};
 	
+
+	// DeathWatch Shops 
+	//________________________________________________
+
+	// Car
+	case "dwShop_car_1":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["C_Hatchback_01_F",3000],
+				["C_Hatchback_01_sport_F",6000],
+				["C_Offroad_01_F",10000],
+				["C_SUV_01_F",15000],
+				["O_Truck_03_repair_F",150000],
+				["O_Truck_03_ammo_F",150000],
+				["O_Truck_03_fuel_F",150000],
+				["O_Truck_03_medical_F",150000],
+				["I_MRAP_03_F",500000],
+				["I_MRAP_03_hmg_F",1000000],
+				["I_APC_Wheeled_03_cannon_F",5000000],
+				["O_APC_Tracked_02_AA_F",10000000]
+			];
+		};		
+	};
+	
+	case "dwShop_car_2":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["C_Hatchback_01_F",3000],
+				["C_Hatchback_01_sport_F",6000],
+				["C_Offroad_01_F",10000],
+				["C_SUV_01_F",15000],
+				["O_Truck_03_repair_F",150000],
+				["O_Truck_03_ammo_F",150000],
+				["O_Truck_03_fuel_F",150000],
+				["O_Truck_03_medical_F",150000],
+				["I_MRAP_03_F",500000],
+				["I_MRAP_03_hmg_F",1000000],
+				["I_APC_Wheeled_03_cannon_F",5000000],
+				["O_APC_Tracked_02_AA_F",10000000]
+			];
+		};		
+	};
+	
+	case "dwShop_car_3":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["C_Hatchback_01_F",3000],
+				["C_Hatchback_01_sport_F",6000],
+				["C_Offroad_01_F",10000],
+				["C_SUV_01_F",15000],
+				["O_Truck_03_repair_F",150000],
+				["O_Truck_03_ammo_F",150000],
+				["O_Truck_03_fuel_F",150000],
+				["O_Truck_03_medical_F",150000],
+				["I_MRAP_03_F",500000],
+				["I_MRAP_03_hmg_F",1000000],
+				["I_APC_Wheeled_03_cannon_F",5000000],
+				["O_APC_Tracked_02_AA_F",10000000]
+			];
+		};		
+	};
+	
+	case "dwShop_car_4":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["C_Hatchback_01_F",3000],
+				["C_Hatchback_01_sport_F",6000],
+				["C_Offroad_01_F",10000],
+				["C_SUV_01_F",15000],
+				["O_Truck_03_repair_F",150000],
+				["O_Truck_03_ammo_F",150000],
+				["O_Truck_03_fuel_F",150000],
+				["O_Truck_03_medical_F",150000],
+				["I_MRAP_03_F",500000],
+				["I_MRAP_03_hmg_F",1000000],
+				["I_APC_Wheeled_03_cannon_F",5000000],
+				["O_APC_Tracked_02_AA_F",10000000]
+			];
+		};		
+	};
+
+
+	// Air
+	case "dwShop_air_1":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["B_Heli_Light_01_F",300000],
+				["I_Heli_light_03_unarmed_F",1500000],
+				["I_Heli_Transport_02_F",3000000],
+				["B_Heli_Transport_01_camo_F",5000000]
+			];
+		};		
+	};
+	
+	case "dwShop_air_2":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["B_Heli_Light_01_F",300000],
+				["I_Heli_light_03_unarmed_F",1500000],
+				["I_Heli_Transport_02_F",3000000],
+				["B_Heli_Transport_01_camo_F",5000000]
+			];
+		};		
+	};
+	
+	case "dwShop_air_3":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["B_Heli_Light_01_F",300000],
+				["I_Heli_light_03_unarmed_F",1500000],
+				["I_Heli_Transport_02_F",3000000],
+				["B_Heli_Transport_01_camo_F",5000000]
+			];
+		};		
+	};
+	
+	case "dwShop_air_4":
+	{		
+		if(__GETC__(life_dwlevel) > 0) then
+		{
+			_return =
+			[
+				["B_Heli_Light_01_F",300000],
+				["I_Heli_light_03_unarmed_F",1500000],
+				["I_Heli_Transport_02_F",3000000],
+				["B_Heli_Transport_01_camo_F",5000000]
+			];
+		};		
+	};
+	
 };
 
 _return;

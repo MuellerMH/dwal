@@ -61,6 +61,11 @@ switch (_shop) do
 	{
 		ctrlSetText[2505,"Donator Shop"];
 	};
+
+	case "dw":
+	{
+		ctrlSetText[2505,"DeathWatch Shop"];
+	};
 	
 	case "sergeant":
 	{

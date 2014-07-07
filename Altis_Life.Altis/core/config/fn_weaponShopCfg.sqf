@@ -562,6 +562,97 @@ switch(_shop) do
 			]
 		];
 	};
+
+	// DeatWatch
+
+	// Weapons
+	case "dwShop_weapon_1":
+	{		
+		switch(true) do
+		{
+			case (__GETC__(life_dwlevel) < 0): {"Du bist kein DeathWatch Mitglied."};
+			case (__GETC__(life_dwlevel) >= 1):
+			{
+				["DeathWatch Firearms",
+					[
+						["arifle_MX_Black_F",nil,1500],
+						["arifle_MXC_Black_F",nil,2000],
+						["arifle_MX_SW_Black_F",nil,3000],
+						["arifle_MXM_Black_F",nil,4000],
+						["arifle_MX_GL_Black_Hamr_pointer_F",nil,5000],
+						["30Rnd_65x39_caseless_mag",nil,150],
+						["100Rnd_65x39_caseless_mag",nil,500],
+						["1Rnd_HE_Grenade_shell",nil,800],
+						["3Rnd_HE_Grenade_shell",nil,1500],
+						["3Rnd_UGL_FlareCIR_F",nil,1000],
+						["3Rnd_SmokeBlue_Grenade_shell",nil,800],
+						["UGL_FlareCIR_F",nil,1000],
+						["srifle_GM6_LRPS_F",nil,50000],
+						["5Rnd_127x108_Mag",nil,500],
+						["5Rnd_127x108_APDS_Mag",nil,5000],
+						["srifle_LRR_LRPS_F",nil,100000],
+						["7Rnd_408_Mag",nil,800],
+						["LMG_Mk200_MRCO_F",nil,80000],
+						["200Rnd_65x39_cased_Box",nil,500],
+						["optic_Arco",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_Aco",nil,1000],
+						["optic_Aco_smg",nil,3000],
+						["optic_Nightstalker",nil,50000],
+						["optic_tws",nil,50000],
+						["optic_tws_mg",nil,50000],
+						["muzzle_snds_H",nil,10000],
+						["muzzle_snds_H_MG",nil,10000],
+						["acc_flashlight",nil,500],
+						["acc_pointer_IR",nil,500],
+						["optic_tws_mg",nil,50000],
+						["launch_RPG32_F",nil,80000],
+						["RPG32_F",nil,15000],
+						["RPG32_HE_F",nil,25000],
+						["launch_I_Titan_short_F",nil,200000],
+						["Titan_AT",nil,50000],
+						["Titan_AP",nil,50000],
+						["launch_I_Titan_F",nil,250000],
+						["MiniGrenade",nil,1500],
+						["HandGrenade",nil,3000],
+						["HandGrenade_Stone",nil,5000],
+						["SmokeShellBlue",nil,1500],
+						["APERSMine_Range_Mag",nil,10000],
+						["APERSBoundingMine_Range_Mag",nil,15000],
+						["APERSTripMine_Wire_Mag",nil,30000]						
+					]
+				];
+			};
+		};	
+	};
+	
+	
+	case "dwShop_genstore":
+	{	switch(true) do
+		{
+			case (call life_dwlevel < 0): {"Du bist kein DeathWatch Mitglied."};
+			case (call life_dwlevel >= 1):
+			{
+				["Deathwatch General Store",
+					[
+						["MineDetector",nil,50],
+						["Binocular",nil,50],
+						["Rangefinder",nil,150],
+						["NVGoggles",nil,200],
+						["FirstAidKit",nil,100],
+						["Medikit",nil,500],
+						["ToolKit",nil,500],
+						["ItemGPS",nil,500],
+						["Laserdesignator",nil,1000],
+						["Laserbatteries",nil,500]
+					]
+				];
+			};
+		};		
+	};
+
+
+
 	
 	case "event":
 	{

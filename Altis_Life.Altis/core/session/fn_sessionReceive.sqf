@@ -67,6 +67,7 @@ switch (playerSide) do
 		//##119 perms
 		life_player_perms = (_session select 13);					
 		life_player_perms = call compile format["%1", life_player_perms];
+		__CONST__(life_mediclevel,parseNumber(_session select 14));
 		
 		//PERM coplevel
 		_coplevel = parseNumber(_session select 4); //this is the MORE important DATABASE coplevel  - it ALWAYS overrides the PERM coplevel
@@ -100,7 +101,9 @@ switch (playerSide) do
 		};
 		life_is_arrested = call compile format["%1",(_session select 5)];
 		__CONST__(life_adminlevel,parseNumber(_session select 6));
-		__CONST__(life_donator,parseNumber(_session select 7));
+		__CONST__(life_donator,parseNumber(_session select 7));		
+		__CONST__(life_dwlevel,parseNumber(_session select 13));
+		
 		civ_gear = (_session select 8);
 		
 		//systemChat format ["SESSION CIV-GEAR: %1", str (_session select 8)];
@@ -138,6 +141,8 @@ switch(__GETC__(life_donator)) do
 	case 1: {life_paycheck = life_paycheck + 750;};
 	case 2: {life_paycheck = life_paycheck + 1500;};
 	case 3: {life_paycheck = life_paycheck + 2000;};
+	case 4: {life_paycheck = life_paycheck + 3000;};
+	case 5: {life_paycheck = life_paycheck + 5000;};
 };
 
 if(isNil("life__inventory")) then

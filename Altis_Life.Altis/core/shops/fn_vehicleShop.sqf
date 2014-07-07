@@ -1,4 +1,5 @@
 #include <macro.h>
+
 /*
 	File: fn_vehicleShop.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -314,6 +315,56 @@ switch (life_veh_shop) do
 	{	
 		if(playerSide == civilian) exitWith {_kill =  "Du bist kein Polizist."};
 		ctrlSetText[2301,"Cop Boothändler"];
+	};
+
+	case "dwShop_car_1":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Land)"];
+	};
+
+	case "dwShop_car_2":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Land)"];
+	};
+
+
+	case "dwShop_car_3":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Land)"];
+	};
+
+	case "dwShop_car_4":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Land)"];
+	};
+
+	case "dwShop_air_1":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Luft)"];
+	};
+
+	case "dwShop_air_2":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"CFahrzeughändler (Luft)"];
+	};
+
+	case "dwShop_air_3":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Luft)"];
+	};
+
+
+	case "dwShop_air_4":
+	{	
+		if(playerSide == west || __GETC__(life_dwlevel) < 1) exitWith {_kill =  "Du bist kein DeathWatch Mitglied."};
+		ctrlSetText[2301,"Fahrzeughändler (Luft)"];
 	};
 	
 	case "donator_heli":

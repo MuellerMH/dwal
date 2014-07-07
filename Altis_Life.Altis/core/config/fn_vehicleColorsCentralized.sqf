@@ -169,6 +169,22 @@ life_vehicle_colors_new =
 													"vehskins\ifrit\Ifrit_urban_hinten_nC.jpg"], 12],
 	["O_MRAP_02_F",[]			,"[DNG] Skin",["vehskins\ifrit\DNG_Ifrit.paa",
 													"vehskins\ifrit\DNG_Ifrit2.paa"], 12],
+
+	// DeathWatch
+
+	// ["B_SDV_01_F", []			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+	// ["O_Truck_03_device_F", []			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+	// ["O_APC_Wheeled_02_rcws_F", []			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+	// ["I_Heli_light_03_unarmed_F",[]			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+	// ["I_APC_Wheeled_03_cannon_F",[]			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+	// ["O_APC_Tracked_02_AA_F",[]			        ,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",
+	// 												"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
+
 	// O_MRAP_02_F - IFRIT
 	////////////////////////////////////
 	["O_MRAP_02_hmg_F",[]			,"Standard",["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa",

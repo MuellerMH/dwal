@@ -57,7 +57,8 @@ switch (_side) do
 					
 				["rebellen_1","Rebellenposten","icons\rebel.paa"],
 				["rebellen_2","Rebellenposten","icons\rebel.paa"],
-				["rebellen_3","Rebellenposten","icons\rebel.paa"]
+				["rebellen_3","Rebellenposten","icons\rebel.paa"],
+				["rebellen_4","Rebellenposten","icons\rebel.paa"]
 			];
 		};
 
@@ -86,7 +87,15 @@ switch (_side) do
 			];
 		};
 
-		
+		//Deathwatch können zusätzlich zu der normalen Auswahl noch folgende Spawnpunkte bekommen
+		if(__GETC__(life_dwlevel) > 0) then {
+			_ret = _ret + [
+				["dw_spawn_1","Deathwatch Lager","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["dw_spawn_2","Deathwatch Lager","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["dw_spawn_3","Deathwatch Lager","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["dw_spawn_4","Deathwatch Lager","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+			];
+		};		
 
 		if((getPlayerUID player) in ["76561198131091263","76561198053634804","76561198107514535","76561198060814205","76561198060814205","76561198092017224","76561198120310094","76561198074798554","76561198072531256","76561198071150052","76561198095444635","76561198071671864"]) then {
 			_ret = _ret + [
