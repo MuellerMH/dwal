@@ -1,6 +1,11 @@
 #include <macro.h>
 /*
-	ADAC clothing store
+	File: fn_clothing_deathwatch.sqf
+	Author: Bryan "Tonic" Boardwine
+	Editor: muellermh
+	
+	Description:
+	Master config file for deathwatch clothing store.
 */
 private["_filter","_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
@@ -14,26 +19,35 @@ switch (_filter) do
 {
 	//Uniforms
 	case 0:
-	{		
+	{	
 		_ret = 
-		[
-			["G_Shades_Black",nil,25]
+		[			
+			["U_C_WorkerCoveralls","Combat Overalls",1250],
+			["U_Marshal","Dienst Uniform",550]
 		];
+		
 	};
 	
 	//Hats
 	case 1:
 	{
+		
 		_ret = 
 		[
 			["H_Beret_02",nil,500],
-			["H_Beret_Colonel",nil,1000]
+			["H_Beret_Colonel",nil,1000],
+			["H_Beret_red",nil,1000],
+			["H_Beret_grn",nil,1000]
 		];
+		
+		
 	};
 	
 	//Glasses
 	case 2:
 	{
+		
+		
 		_ret = 
 		[
 			["G_Shades_Black",nil,25],
@@ -47,12 +61,15 @@ switch (_filter) do
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55]
 		];
+		
 	};
 	
 	//Vest
 	case 3:
 	{
-		_ret =
+		
+		
+		_ret = 
 		[
 			["V_BandollierB_blk",nil,2500],
 			["V_PlateCarrier1_blk",nil,3000],
@@ -61,14 +78,17 @@ switch (_filter) do
 			["V_PlateCarrierIAGL_dgtl",nil,7000],
 			["V_PlateCarrierL_CTRG",nil,8000],
 			["V_PlateCarrierH_CTRG",nil,9000],
-			["V_I_G_resistanceLeader_F",nil,10000]
+			["V_I_G_resistanceLeader_F",nil,10000],
+			["V_TacVest_blk_POLICE",nil,20000]
 		];
+		
 	};
 	
 	//Backpacks
 	case 4:
 	{
-		_ret =
+		
+		_ret = 
 		[
 			["B_Kitbag_cbr",nil,800],
 			["B_AssaultPack_cbr",nil,700],
@@ -82,6 +102,7 @@ switch (_filter) do
 			["B_Carryall_khk",nil,5000],
 			["B_Parachute",nil,10000]
 		];
+		
 	};
 };
 

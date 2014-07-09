@@ -44,6 +44,27 @@ switch (true) do
 		};
 	};
 	
+	
+	case (_item == "bier"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			life_thirst = 100;
+			player setFatigue 0;
+			
+			//player say3D "drink";
+			[player,"drink"] call life_fnc_globalSound;
+			
+			[] spawn
+			{
+				life_redgull_effect = time;
+				titleText["Du bist nun für 10 Minuten unerschöpflich!","PLAIN"];
+				player enableFatigue false;
+				waitUntil {!alive player OR ((time - life_redgull_effect) > (10 * 60))};
+				player enableFatigue true;
+			};
+		};
+	};
 	case (_item == "spikeStrip"):
 	{
 		if(!isNull life_spikestrip) exitWith {hint "Du hast bereits ein Nagelband im aktiven Einsatz."};
@@ -72,7 +93,7 @@ switch (true) do
 		[] spawn life_fnc_lockpick;
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","frogleg"]):
+	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","frogleg","bread"]):
 	{
 		[_item] call life_fnc_eatFood;
 	};

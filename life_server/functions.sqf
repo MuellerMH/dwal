@@ -312,10 +312,26 @@ compileFinal "
 	ctrlShow[3016,true];
 ";
 
+//To All ADAC
+fnc_cell_textdw =
+compileFinal "
+	private[""_msg"",""_to""];
+	ctrlShow[3016,false];
+	_msg = ctrlText 3003;
+	_to = ""DeathWatch"";
+	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3016,true];};
+		
+	[[_msg,name player,1],""clientMessage"",true,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""You sent %1 a message: %2"",_to,_msg];
+	ctrlShow[3016,true];
+";
+
 publicVariable "fnc_cell_textmsg";
 publicVariable "fnc_cell_textcop";
 publicVariable "fnc_cell_textadmin";
 publicVariable "fnc_cell_textadac";
+publicVariable "fnc_cell_textdw";
 publicVariable "fnc_cell_adminmsg";
 publicVariable "fnc_cell_adminmsgall";
 publicVariable "fnc_cell_copmsgall";
@@ -414,6 +430,19 @@ compileFinal "
 			hint parseText format [""<t color='#ffff00'><t size='2'><t align='center'>ADAC-Anfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>ADAC<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
 			[""TextMessage"",[format[""ADAC-Anfrage von: %1"",_from]]] call bis_fnc_showNotification;
+			systemChat _message;
+		};
+
+		
+		case 7 :
+		{			
+			if((call life_dwlevel) < 1) exitWith {};
+		
+			private[""_message""];
+			_message = format[""---DeathWatch %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#ffff00'><t size='2'><t align='center'>DeathWatch-Anfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>DeathWatch<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
+			
+			[""TextMessage"",[format[""DeathWatch-Anfrage von: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 		};
 	};

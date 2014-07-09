@@ -1,11 +1,11 @@
 /*
 
-	Zentrale Konfiguration für alle Fahrzeuge
+	Zentrale Konfiguration fÃ¼r alle Fahrzeuge
 
 */
 
 
-//Schema: FAHRZEUG, CONDITIONS (civ,cop,reb,adac,donator) - leer lassen für alle - arbeitet mit ODER, FARB-NAME, FARB-DATEN, ---FARBEIMER---
+//Schema: FAHRZEUG, CONDITIONS (civ,cop,reb,adac,donator) - leer lassen fÃ¼r alle - arbeitet mit ODER, FARB-NAME, FARB-DATEN, ---FARBEIMER---
 life_vehicle_colors_new = 
 [
 	//C_Offroad_01_F
@@ -16,12 +16,12 @@ life_vehicle_colors_new =
 	["C_Offroad_01_F",[]		, "Blau",["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa"], 1],
 	["C_Offroad_01_F",[]		, "Dunkelrot",["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa"], 1],
 	["C_Offroad_01_F",[]		, "Blau-Weiss",["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"], 1],
-	["C_Offroad_01_F",["cop"]	, "Polizei",["vehskins\police_offroad.paa"], 2],
+	["C_Offroad_01_F",["cop"]	, "Polizei",["vehskins\police_offroad.jpg"], 2],
 	["C_Offroad_01_F",[]		, "Taxi",["#(argb,8,8,3)color(0.6,0.3,0.01,1)"], 1],
-	["C_Offroad_01_F",["adac"], "ADAC",["vehskins\adac_offroad.paa"], 3],
-	["C_SUV_01_F",["adac"], "ADAC",["vehskins\adac_suv.paa"], 3],
-	["C_Offroad_01_F",[], 	"Energy",["vehskins\lila.paa"], 3],
-	["C_Offroad_01_F",[], 	"DeathWatch",["vehskins\offroad_01_space_blue.paa"], 3],
+	["C_Offroad_01_F",["adac"], "ADAC",["vehskins\adac_offroad.jpg"], 3],
+	["C_SUV_01_F",["adac"], "ADAC",["vehskins\adac_suv.jpg"], 3],
+	["C_Offroad_01_F",[], 	"Energy",["vehskins\lila.jpg"], 3],
+	["C_Offroad_01_F",[], 	"DeathWatch",["vehskins\offroad_01_space_blue.jpg"], 3],
 
 	
 	//C_Hatchback_01_F
@@ -43,19 +43,19 @@ life_vehicle_colors_new =
 	["C_Hatchback_01_sport_F",[]		, "Gelb",["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa"], 5],
 	["C_Hatchback_01_sport_F",[]		, "Weiss",["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa"], 5],
 	["C_Hatchback_01_sport_F",[]		, "Grau",["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa"], 5],
-	["C_Hatchback_01_sport_F",["cop"]	, "Polizei",["vehskins\police_hatchback.paa"], 6],
+	["C_Hatchback_01_sport_F",["cop"]	, "Polizei",["vehskins\police_hatchback.jpg"], 6],
 	
 	//C_SUV_01_F
 	//////////////////////////////////////////////////////
 	["C_SUV_01_F",[]		,"Dunkelrot",["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"], 5],
 	["C_SUV_01_F",[]		,"Silber",["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"], 5],
 	["C_SUV_01_F",[]		,"Organge",["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"], 5],
-	["C_SUV_01_F",["cop"]	,"Polizei",["vehskins\police_suv.paa"], 6],
-	["C_SUV_01_F",[]	,"Carbon_Full",["vehskins\carbon_full_suv_v1.paa"], 10],
+	["C_SUV_01_F",["cop"]	,"Polizei",["vehskins\police_suv.jpg"], 6],
+	["C_SUV_01_F",[]	,"Carbon_Full",["vehskins\carbon_full_suv_v1.jpg"], 10],
 	["C_SUV_01_F",[]	,"Orange",["vehskins\orangesuv.jpg"], 10],
-	["C_SUV_01_F",[]	,"Carbon_Weiß",["vehskins\carbon_suv_V3.paa"], 10],
-	["C_SUV_01_F",[]	,"SUV Luxus",["vehskins\suv_white.paa"], 10],
-	// ["C_SUV_01_F",[]	,"DeathWatch",["vehskins\SUV_Tribals.paa"], 10],
+	["C_SUV_01_F",[]	,"Carbon_WeiÃŸ",["vehskins\carbon_suv_V3.jpg"], 10],
+	["C_SUV_01_F",[]	,"SUV Luxus",["vehskins\suv_white.jpg"], 10],
+	// ["C_SUV_01_F",[]	,"DeathWatch",["vehskins\SUV_Tribals.jpg"], 10],
 	//C_Van_01_box_F
 	//////////////////////////////////////////////////////
 	["C_Van_01_box_F",[]		,"Weiss",["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"], 1],
@@ -99,8 +99,8 @@ life_vehicle_colors_new =
 	["B_Heli_Light_01_F",[]			,"Vrana",["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa"], 12],
 	["B_Heli_Light_01_F",[]			,"Wellenblau",["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"], 12],
 	["B_Heli_Light_01_F",["reb"]	,"Rebell Digi",["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"], 12],
-	["B_Heli_Light_01_F",["cop"]	,"Polizei",["vehskins\police_hummingbird.paa"], 12],
-	["B_Heli_Light_01_F",["adac"]	,"ADAC",["vehskins\adac_Hummingbird.paa"], 12],
+	["B_Heli_Light_01_F",["cop"]	,"Polizei",["vehskins\police_hummingbird.jpg"], 12],
+	["B_Heli_Light_01_F",["adac"]	,"ADAC",["vehskins\adac_Hummingbird.jpg"], 12],
 	
 	//O_Heli_Light_02_unarmed_F
 	//////////////////////////////////////////////////////
@@ -117,9 +117,9 @@ life_vehicle_colors_new =
 	//////////////////////////////////////////////////////
 	["B_MRAP_01_F",["cop"]					,"Panda",["vehskins\cophunter.jpg"], 12],
 	
-	["I_MRAP_03_F",["cop"]					,"Schwarz",["vehskins\strider.paa"], 12],
+	["I_MRAP_03_F",["cop"]					,"Schwarz",["vehskins\strider.jpg"], 12],
 	
-	["I_MRAP_03_hmg_F",["cop"]					,"Schwarz",["vehskins\strider.paa"], 12],
+	["I_MRAP_03_hmg_F",["cop"]					,"Schwarz",["vehskins\strider.jpg"], 12],
 	
 	//B_MRAP_01_hmg_F (Bewaffneter Hunter) - Hat die selben Texturen wie der Hunter
 	//////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ life_vehicle_colors_new =
 	//////////////////////////////////////////////////////
 	["B_Truck_01_transport_F",[]		,"Standard",[], 8],
 	//["B_Truck_01_transport_F",[]		,"Standard",["\A3\Soft_F_Beta\Truck_01\data\truck_01_ext_01.paa","\a3\soft_f_beta\Truck_01\data\truck_01_ext_02.paa"], 8],
-	["B_Truck_01_transport_F",["adac"]		,"ADAC",["vehskins\adac_hemett_01.paa","vehskins\adac_hemett_02.paa"], 9],
+	["B_Truck_01_transport_F",["adac"]		,"ADAC",["vehskins\adac_hemett_01.jpg","vehskins\adac_hemett_02.jpg"], 9],
 	
 	//I_Truck_02_transport_F
 	//////////////////////////////////////////////////////
@@ -143,13 +143,13 @@ life_vehicle_colors_new =
 	
 	//I_Heli_light_03_F
 	//////////////////////////////////////////////////////
-	["I_Heli_light_03_F",["cop"]					,"Polizei",["vehskins\police_hellcat.paa"], 12],
+	["I_Heli_light_03_F",["cop"]					,"Polizei",["vehskins\police_hellcat.jpg"], 12],
 
 	
 	//I_Heli_light_03_unarmed_F
 	//////////////////////////////////////////////////////
-	["I_Heli_light_03_unarmed_F",["cop"]			,"Polizei",["vehskins\police_hellcat.paa"], 12],	
-	["I_Heli_light_03_unarmed_F",["adac"]			,"ADAC",["vehskins\adac_hellcat.paa"], 12],
+	["I_Heli_light_03_unarmed_F",["cop"]			,"Polizei",["vehskins\police_hellcat.jpg"], 12],	
+	["I_Heli_light_03_unarmed_F",["adac"]			,"ADAC",["vehskins\adac_hellcat.jpg"], 12],
 	["I_Heli_light_03_unarmed_F",["donator"]		,"Standard",["\a3\air_f_epb\Heli_Light_03\data\heli_light_03_base_indp_co.paa"], 12],
 	
 	//I_Heli_Transport_02_F
@@ -167,8 +167,8 @@ life_vehicle_colors_new =
 													"\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 12],
 	["O_MRAP_02_F",[]			,"[#NC] Skin",["vehskins\ifrit\Ifrit_urban_front_nc.jpg",
 													"vehskins\ifrit\Ifrit_urban_hinten_nC.jpg"], 12],
-	["O_MRAP_02_F",[]			,"[DNG] Skin",["vehskins\ifrit\DNG_Ifrit.paa",
-													"vehskins\ifrit\DNG_Ifrit2.paa"], 12],
+	["O_MRAP_02_F",[]			,"[DNG] Skin",["vehskins\ifrit\DNG_Ifrit.jpg",
+													"vehskins\ifrit\DNG_Ifrit2.jpg"], 12],
 
 	// DeathWatch
 
@@ -198,7 +198,7 @@ life_vehicle_colors_new =
 	//B_MRAP_01_gmg_F
 	//////////////////////////////////////////////////////
 	//ACHTUNG: Keine Quelle vorhanden!
-	//["B_MRAP_01_gmg_F",["cop"]			,"Polizei",["vehskins\police_hellcat.paa"]],
-    //["B_MRAP_01_gmg_F",["cop"]			,"SEK",["vehskins\sek_hunter_01.paa"]],	
+	//["B_MRAP_01_gmg_F",["cop"]			,"Polizei",["vehskins\police_hellcat.jpg"]],
+    //["B_MRAP_01_gmg_F",["cop"]			,"SEK",["vehskins\sek_hunter_01.jpg"]],	
 ];
 

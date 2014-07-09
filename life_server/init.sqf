@@ -1,6 +1,6 @@
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 
-__CONST__(LIFE_SCHEMA_NAME,"'ni228050_1_DB'");
+__CONST__(LIFE_SCHEMA_NAME,"'ni363738_1_DB'");
 
 //##122
 //life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];

@@ -6,7 +6,7 @@
 
 private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference"];
 
-[_rand = [0,120] call life_fnc_randomRound; //0-200
+[_rand = [0,120] call life_fnc_randomRound]; //0-200
 
 /*
 
@@ -54,6 +54,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 36): //6% Drogenpreis erhöhen
@@ -118,6 +119,7 @@ switch(true) do
 		[[0,"News: Arabien hat Probleme Öl zu fördern!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		["oilp", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event oilp";
 	};
@@ -126,6 +128,7 @@ switch(true) do
 		[[0,"News: Ein jugendlicher hat versehentlich ein Ölfeld angezündet."],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		["oilp", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event oilp";
 	};
@@ -134,6 +137,7 @@ switch(true) do
 		[[0,"News: Einige Greenpeaceaktivisten stoppten einen Zug. Auf diesem Zug waren viele Tonnen Heizöl."],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		["oilp", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event oilp";
 	};
@@ -144,6 +148,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -154,6 +159,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -164,6 +170,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -174,6 +181,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -184,6 +192,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -194,6 +203,7 @@ switch(true) do
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
@@ -203,6 +213,7 @@ switch(true) do
 		
 		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldm";
 	};
@@ -214,6 +225,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 74): //6% Goldpreis erhöht sich
@@ -222,6 +234,7 @@ switch(true) do
 		
 		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
 	};
@@ -231,6 +244,7 @@ switch(true) do
 		
 		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
 	};
@@ -240,6 +254,7 @@ switch(true) do
 		
 		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
 	};
@@ -274,6 +289,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 96): //8% Kupfer/Silber erhöht sich
@@ -314,6 +330,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 110): //8% Kupfer/Silber erhöht sich
@@ -324,6 +341,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 110): //8% Kupfer/Silber erhöht sich
@@ -334,6 +352,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 115): //8% Kupfer/Silber erhöht sich
@@ -343,6 +362,7 @@ switch(true) do
 		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
@@ -354,6 +374,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 125): //8% Kupfer/Silber erhöht sich
@@ -364,6 +385,7 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["bier", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
 	default //market change: default version

@@ -332,6 +332,73 @@ switch(life_veh_shop) do
 		_sp = getMarkerPos "donator_All_Fahrzeug_Spawn";
 		_dir = markerDir "donator_All_Fahrzeug_Spawn";
 	};
+	
+
+	case "dwShop_car_1":
+	{
+		_sp = getMarkerPos "car_dw_1";
+		_dir = markerDir "car_dw_1";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_car_2":
+	{
+		_sp = getMarkerPos "car_dw_2";
+		_dir = markerDir "car_dw_2";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_car_3":
+	{
+		_sp = getMarkerPos "car_dw_3";
+		_dir = markerDir "car_dw_3";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_car_4":
+	{
+		_sp = getMarkerPos "car_dw_4";
+		_dir = markerDir "car_dw_4";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+
+
+	case "dwShop_air_1":
+	{
+		_sp = getMarkerPos "air_dw_1";
+		_dir = markerDir "air_dw_1";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_air_2":
+	{
+		_sp = getMarkerPos "air_dw_2";
+		_dir = markerDir "air_dw_2";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_air_3":
+	{
+		_sp = getMarkerPos "air_dw_3";
+		_dir = markerDir "air_dw_3";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
+	case "dwShop_air_4":
+	{
+		_sp = getMarkerPos "air_dw_4";
+		_dir = markerDir "air_dw_4";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
 };
 _index = lbCurSel 2302;
 _veh = lbData[2302,_index];

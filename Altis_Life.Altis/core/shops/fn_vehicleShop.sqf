@@ -30,6 +30,25 @@ switch (life_veh_shop) do
 		ctrlSetText[2301,"ADAC-Fahrzeuge"];
 	};
 
+	case "civ_adac_2":
+	{
+		if((["adac"] call life_fnc_permLevel) < 1) exitWith {_kill = "Du hast keine ADAC-Lizenz."};
+		ctrlSetText[2301,"ADAC-Fahrzeuge"];
+	};
+
+	case "civ_adac_air":
+	{
+		if((["adac"] call life_fnc_permLevel) < 1) exitWith {_kill = "Du hast keine ADAC-Lizenz."};
+		ctrlSetText[2301,"ADAC-Fahrzeuge"];
+	};
+	
+	case "civ_adac_air_2":
+	{
+		if((["adac"] call life_fnc_permLevel) < 1) exitWith {_kill = "Du hast keine ADAC-Lizenz."};
+		ctrlSetText[2301,"ADAC-Fahrzeuge"];
+	};
+
+
 	case "civ_car_1":
 	{
 		if(playerSide == west) exitWith {_kill = "Du bist kein Zivilist."};

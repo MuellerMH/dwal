@@ -44,6 +44,11 @@ _index = lbAdd [1500, "ADAC rufen"];
 lbSetValue[1500,_index,6]; //ID:6
 lbSetColor[1500,_index,[1,1,0,1]];
 
+//DeathWatch
+_index = lbAdd [1500, "DeathWatch rufen"];
+lbSetValue[1500,_index,7]; //ID:6
+lbSetColor[1500,_index,[1.2,1.2,0,1]];
+
 //EMPTY PLACEHOLDER
 _index = lbAdd [1500, ""];
 lbSetValue[1500,_index,-1];

@@ -86,6 +86,7 @@ switch (_var) do
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
+	case "license_civ_dw": {"DeathWatch"};
 	case "license_civ_air": {"Pilotenschein"};
 	case "license_civ_heroin": {"Fähigkeit: Heroin herstellen"};
 	case "license_civ_gang": {"Gangmitgliedschaft"};

@@ -67,13 +67,13 @@ if(side _source == west && vehicle _source == _source && playerSide == civilian)
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 	//[[getPlayerUID player],"life_fnc_wantedPunish",false,false] spawn life_fnc_MP;
 }
-	else
+else
 {
 	//##85
-	/*if(playerSide == civilian) then
+	if(playerSide == civilian) then
 	{
 		[[getPlayerUID _unit],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
-	};*/
+	};
 };
 
 _handle = [_unit] spawn life_fnc_dropItems;

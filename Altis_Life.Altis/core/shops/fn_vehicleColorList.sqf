@@ -28,6 +28,8 @@ for "_i" from 0 to (count _c_arr)-1 do
 		//SPECIAL CASE: ADAC Vehicle colors ONLY if SHOP is ADAC 
 		case ("adac" in _factions && !(life_veh_shop in ["civ_adac", "civ_adac_air"])): {}; //Even ADAC can ONLY buy in ADAC shop!
 		case (!("adac" in _factions) && (life_veh_shop in ["civ_adac", "civ_adac_air"])): {}; //Only show ADAC colors in ADAC shop
+		case ("adac" in _factions && !(life_veh_shop in ["civ_adac", "civ_adac_air_2"])): {}; //Even ADAC can ONLY buy in ADAC shop!
+		case (!("adac" in _factions) && (life_veh_shop in ["civ_adac", "civ_adac_air_2"])): {}; //Only show ADAC colors in ADAC shop
 		
 		default
 		{

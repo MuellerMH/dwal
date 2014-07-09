@@ -47,6 +47,10 @@ switch(_msgtype) do
 	{
 		[[_message,name player,6],"clientMessage",true,false] spawn life_fnc_MP;
 	};
+	case 7: //To all DeathWatch
+	{
+		[[_message,name player,7],"clientMessage",true,false] spawn life_fnc_MP;
+	};
 	case 0: //To a person
 	{
 		_dst = call compile format["%1",_dstdata];

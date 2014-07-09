@@ -575,6 +575,12 @@ switch(_shop) do
 			{
 				["DeathWatch Firearms",
 					[
+						["hgun_Rook40_snds_F",nil,500],
+						["30Rnd_9x21_Mag",nil,50],
+						["hgun_ACPC2_snds_F",nil,500],
+						["9Rnd_45ACP_Mag",nil,50],
+						["optic_Yorris",nil,1000],
+						["optic_MRD",nil,1000],
 						["arifle_MX_Black_F",nil,1500],
 						["arifle_MXC_Black_F",nil,2000],
 						["arifle_MX_SW_Black_F",nil,3000],
@@ -605,7 +611,6 @@ switch(_shop) do
 						["muzzle_snds_H_MG",nil,10000],
 						["acc_flashlight",nil,500],
 						["acc_pointer_IR",nil,500],
-						["optic_tws_mg",nil,50000],
 						["launch_RPG32_F",nil,80000],
 						["RPG32_F",nil,15000],
 						["RPG32_HE_F",nil,25000],
@@ -613,6 +618,7 @@ switch(_shop) do
 						["Titan_AT",nil,50000],
 						["Titan_AP",nil,50000],
 						["launch_I_Titan_F",nil,250000],
+						["Titan_AA",nil,10000],
 						["MiniGrenade",nil,1500],
 						["HandGrenade",nil,3000],
 						["HandGrenade_Stone",nil,5000],

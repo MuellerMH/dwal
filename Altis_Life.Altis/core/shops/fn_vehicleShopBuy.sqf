@@ -27,6 +27,22 @@ switch(life_veh_shop) do
 		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
 	};
 
+	case "civ_adac_2":
+	{
+		_sp = getMarkerPos "civ_adac_car_spawn_2";
+		_dir = markerDir "civ_adac_car_spawn";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+	
+	case "civ_adac_air_2":
+	{
+		_sp = getMarkerPos "civ_adac_air_2";
+		_dir = markerDir "civ_adac_air_2";
+
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Ein Fahrzeug ist auf dem Spawnpunkt."};
+	};
+
 	case "civ_car_1":
 	{
 		_sp = getMarkerPos "civ_car_1";

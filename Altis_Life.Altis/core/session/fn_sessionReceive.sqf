@@ -56,6 +56,10 @@ switch (playerSide) do
 		[] spawn life_fnc_loadGear;
 		//if(life_adminlevel > 0) then {[] execVM "core\client\aconfig.sqf";};
 		__CONST__(life_donator,parseNumber(_session select 9));
+
+
+		__CONST__(life_mediclevel,parseNumber(_session select 14));
+		
 		
 		//Initialize inventory stuff ##43
 		life__inventory = (_session select 10);
@@ -67,7 +71,6 @@ switch (playerSide) do
 		//##119 perms
 		life_player_perms = (_session select 13);					
 		life_player_perms = call compile format["%1", life_player_perms];
-		__CONST__(life_mediclevel,parseNumber(_session select 14));
 		
 		//PERM coplevel
 		_coplevel = parseNumber(_session select 4); //this is the MORE important DATABASE coplevel  - it ALWAYS overrides the PERM coplevel
@@ -143,6 +146,46 @@ switch(__GETC__(life_donator)) do
 	case 3: {life_paycheck = life_paycheck + 2000;};
 	case 4: {life_paycheck = life_paycheck + 3000;};
 	case 5: {life_paycheck = life_paycheck + 5000;};
+};
+
+switch(__GETC__(life_dwlevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 5000;};
+	case 2: {life_paycheck = life_paycheck + 5000;};
+	case 3: {life_paycheck = life_paycheck + 5000;};
+	case 4: {life_paycheck = life_paycheck + 5000;};
+	case 5: {life_paycheck = life_paycheck + 5000;};
+};
+
+switch(__GETC__(life_mediclevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 10500;};
+	case 2: {life_paycheck = life_paycheck + 12500;};
+	case 3: {life_paycheck = life_paycheck + 14500;};
+	case 4: {life_paycheck = life_paycheck + 16500;};
+	case 5: {life_paycheck = life_paycheck + 18500;};
+};
+
+switch(__GETC__(life_coplevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 2500;};
+	case 2: {life_paycheck = life_paycheck + 4500;};
+	case 3: {life_paycheck = life_paycheck + 6500;};
+	case 4: {life_paycheck = life_paycheck + 8500;};
+	case 5: {life_paycheck = life_paycheck + 10500;};
+	case 6: {life_paycheck = life_paycheck + 12500;};
+	case 7: {life_paycheck = life_paycheck + 14500;};
+	case 8: {life_paycheck = life_paycheck + 16500;};
+	case 9: {life_paycheck = life_paycheck + 18500;};
+};
+
+switch((["adac"] call life_fnc_permLevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 15000;};
+	case 2: {life_paycheck = life_paycheck + 20000;};
+	case 3: {life_paycheck = life_paycheck + 25000;};
+	case 4: {life_paycheck = life_paycheck + 30000;};
+	case 5: {life_paycheck = life_paycheck + 35000;};
 };
 
 if(isNil("life__inventory")) then

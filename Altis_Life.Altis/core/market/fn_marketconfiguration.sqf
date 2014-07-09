@@ -21,7 +21,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1],
+			["bier",1] 
 		]
 	],
 	
@@ -35,7 +36,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -49,7 +51,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -63,7 +66,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -77,7 +81,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -91,7 +96,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -105,7 +111,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["coalr",1],
-			["goldr",1] 
+			["goldr",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -119,7 +126,8 @@ life_market_resources = [
 			["goldr",1],
 			["silverr",1],
 			["coalr",1],
-			["glass",1]
+			["glass",1],
+			["bier",1] 
 		] 
 	],
 	
@@ -133,7 +141,8 @@ life_market_resources = [
 			["cement",1],
 			["goldr",1],
 			["coalr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	
@@ -147,7 +156,8 @@ life_market_resources = [
 			["cement",1],
 			["silverr",1],
 			["goldr",1],
-			["glass",1] 
+			["glass",1] ,
+			["bier",1] 
 		] 
 	],
 	

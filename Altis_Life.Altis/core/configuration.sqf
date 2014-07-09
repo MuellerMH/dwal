@@ -69,6 +69,7 @@ life_eat_Rabbit = 40;
 life_eat_Apple = 10;
 life_eat_turtlesoup = 80;
 life_eat_donuts = 40;
+life_eat_bread = 80;
 
 /*
 *****************************
@@ -190,6 +191,7 @@ life_licenses =
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
+	["license_civ_dw","civ"],
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
